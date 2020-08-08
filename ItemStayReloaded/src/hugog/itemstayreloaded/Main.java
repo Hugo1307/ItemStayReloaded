@@ -89,7 +89,7 @@ public class Main extends JavaPlugin {
     messagesConfig.getConfig().addDefault("PlayerNewGangChief", "Congratulations! You are the new Chief of the gang {0}.");
     messagesConfig.getConfig().addDefault("RoleSalaryChanged", "You changed the salary of {0} to {1} coins");
     messagesConfig.getConfig().addDefault("IntentNextItemSaved", "The next dropped item will be saved.");
-    messagesConfig.getConfig().addDefault("IntentNextItemSaved", "{0} was successfully saved.");
+    messagesConfig.getConfig().addDefault("ItemSaved", "{0} was successfully saved.");
     
     messagesConfig.saveConfig();
     

@@ -1,5 +1,5 @@
 name: ItemStayReloaded
-main: hugog.itemstay.Main
+main: hugog.itemstayreloaded.Main
 version: 1.0.0
 description: Add static droped items to your server.
 author: Hugo1307
