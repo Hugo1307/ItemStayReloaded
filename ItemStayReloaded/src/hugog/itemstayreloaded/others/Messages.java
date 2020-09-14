@@ -15,9 +15,14 @@ public class Messages {
   private String reloadConfig;
   private String intentNextItemSaved;
   private String itemSaved;
+  private String itemIdNotFound;
+  private String itemDeleted;
+  private String itemBeingProcessed;
+  private String noItemsFound;
+  private String pageNotFound;
   
   public Messages(ConfigAccessor messagesConfig) {
-    this.pluginHeader = ChatColor.GRAY + "-=-=-=-=-=-=-=-=-=-=-=- " + ChatColor.GREEN + ChatColor.BOLD + "ItemStayReloaded" + ChatColor.GRAY + " -=-=-=-=-=-=-=-=-=-=-=- ";
+    this.pluginHeader = ChatColor.GRAY + "-=-=-=-=-=-=-=-=-= " + ChatColor.GREEN + "ItemStayReloaded" + ChatColor.GRAY + " =-=-=-=-=-=-=-=-=- ";
     this.pluginFooter = ChatColor.GRAY + "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-";
     this.pluginPrefix = ChatColor.GREEN + "ISR" + ChatColor.RESET + " > " + ChatColor.GRAY;
     this.noPermission = messagesConfig.getConfig().getString("NoPermission");
@@ -28,6 +33,11 @@ public class Messages {
     this.reloadConfig = messagesConfig.getConfig().getString("ReloadConfig");
     this.intentNextItemSaved = messagesConfig.getConfig().getString("IntentNextItemSaved");
     this.itemSaved = messagesConfig.getConfig().getString("ItemSaved");
+    this.itemIdNotFound = messagesConfig.getConfig().getString("ItemIdNotFound");
+    this.itemDeleted = messagesConfig.getConfig().getString("ItemDeleted");
+    this.itemBeingProcessed = messagesConfig.getConfig().getString("ItemBeingProcessed");
+    this.noItemsFound = messagesConfig.getConfig().getString("NoItemsFound");
+    this.pageNotFound = messagesConfig.getConfig().getString("PageNotFound");
   }
   
   public String getPluginHeader() {
@@ -73,4 +83,25 @@ public class Messages {
   public String getItemSaved() {
     return this.itemSaved;
   }
+
+	public String getItemIdNotFound() {
+		return itemIdNotFound;
+	}
+	
+	public String getItemDeleted() {
+		return itemDeleted;
+	}
+
+	public String getItemBeingProcessed() {
+		return itemBeingProcessed;
+	}
+
+	public String getNoItemsFound() {
+		return noItemsFound;
+	}
+
+	public String getPageNotFound() {
+		return pageNotFound;
+	}
+	
 }
